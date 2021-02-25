@@ -1,10 +1,8 @@
 const { app, BrowserWindow } = require('electron');
 const isDev = require('electron-is-dev');
 
-let mainWindow;
-
 app.on('ready', () => {
-    mainWindow = new BrowserWindow({
+    const mainWindow = new BrowserWindow({
         width: 1200,
         height: 800,
         webPreferences: {
